@@ -48,12 +48,13 @@ Enter coordinates:
 _**Hint** Go to https://www.google.dk/maps/place/Aarhus/ and right-click on the map to copy
 GPS coordinates for testing_
 
-Calculating the distance
+## Calculating the distance
+
+Translate the equation above into code:
 
 $` d = {\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2} } `$
 
-Translate the equation above into code, and consider the following:
-- How could you use a `struct` to organize the function parameters?
+Consider the following: how could you use a `struct` to organize the function parameters?
 
 The equation above doesn't take into account the curvature of the Earth, but that's okay, since we're focusing on structures in this exercise, but if you want to get more percise, take a look at the following code and see if you can work it into your solution:
 ```cpp
