@@ -49,6 +49,7 @@ _**Hint** Go to https://www.google.dk/maps/place/Aarhus/ and right-click on the 
 GPS coordinates for testing_
 
 Calculating the distance
+
 $` d = {\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2} } `$
 
 Translate the equation above into code, and consider the following:
