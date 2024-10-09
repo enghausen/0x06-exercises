@@ -1,0 +1,34 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build_current_file",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-g",
+        "${fileDirname}/${fileBasename}",
+        "-o",
+        "${workspaceFolder}/build/${fileBasenameNoExtension}.out"
+      ],
+      "group": "build",
+      "problemMatcher": [
+        "$gcc"
+      ],
+    }, {
+      "label": "build_current_directory",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-g",
+        "${fileDirname}/*.cpp",
+        "-o",
+        "${workspaceFolder}/build/${fileBasenameNoExtension}.out"
+      ],
+      "group": "build",
+      "problemMatcher": [
+        "$gcc"
+      ],
+    },
+  ]
+}
