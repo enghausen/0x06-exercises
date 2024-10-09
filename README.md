@@ -45,8 +45,6 @@ ROMEO 2 (Honda Civic) is 1.95838 m away
 Enter coordinates: 
 ```
 
-_**Hint** Go to https://www.google.dk/maps/place/Aarhus/ and right-click on the map to copy
-GPS coordinates for testing_
 
 ## Calculating the distance
 
@@ -56,6 +54,7 @@ $` d = {\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2} } `$
 
 Consider the following: how could you use a `struct` to organize the function parameters?
 
+### Calculating the distance between two GPS coordinates
 The equation above doesn't take into account the curvature of the Earth, but that's okay, since we're focusing on structures in this exercise, but if you want to get more percise, take a look at the following code and see if you can work it into your solution:
 ```cpp
 double to_rad(double deg) {
@@ -84,3 +83,6 @@ double calculateDistance(GeoLocation loc1, GeoLocation loc2) {
     return distance;
 }
 ```
+
+_**Hint** Go to https://www.google.dk/maps/place/Aarhus/ and right-click on the map to copy
+GPS coordinates for testing_
