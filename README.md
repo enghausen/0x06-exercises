@@ -40,7 +40,7 @@ Enter coordinates: 56.12929161858004 10.184481194595108
 BRAVO 3 (Volkswagen Golf) is 1.14866 meters away
 
 Enter coordinates: 56.14139560553661 10.177339593224056
-ROMEO 2 (Honda Civic) is 1.95838 m away
+ROMEO 2 (Honda Civic) is 1.95838 meters away
 
 Enter coordinates: 
 ```
