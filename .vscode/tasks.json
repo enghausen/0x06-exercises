@@ -3,14 +3,17 @@
   "tasks": [
     {
       "label": "build_project",
-      "type": "shell",
-      "command": "g++",
+      "type": "cppbuild",
+      "command": "/usr/bin/g++",
       "args": [
         "-g",
-        "${fileDirname}/${fileBasename}",
+        "main.cpp",
         "-o",
-        "${workspaceFolder}/build/${fileBasenameNoExtension}.out"
+        "${workspaceFolder}/build/program"
       ],
+      "options": {
+        "cwd": "${workspaceFolder}/src",
+      },
       "group": {
         "kind": "build",
         "isDefault": true
