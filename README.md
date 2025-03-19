@@ -1,10 +1,10 @@
 # Exercise 0x06
-The Danish police wants and new fleet management system (FMS) to optimize patrolling in
-the different districts.
+The Danish Police wants and new fleet management system (FMS) to optimize patrolling in the different districts.
 
-Requirements
-Given a fleet of vehicles, the system shall be capable of identifying the vehicle nearest
-to a location provided by the user in the format LAT LNG , (e.g. 56.13466783419156 10.205487752946347 )
+**Requirements**
+Given a fleet of _vehicles_, the system shall 
+- be capable of identifying the vehicle nearest
+to a location provided by the user in the format LAT LNG , (e.g. `56.13466783419156 10.205487752946347`)
 
 Each patrol car is described by the following data
 - Make (e.g. Volkwagen, Volvo or Ford)
@@ -46,16 +46,12 @@ Enter coordinates:
 ```
 
 
-## Calculating the distance
-
-Translate the equation above into code:
-
-$` d = {\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2} } `$
-
+## Representing GPS coordinates
 Consider the following: how could you use a `struct` to organize the function parameters?
 
 ### Calculating the distance between two GPS coordinates
-The equation above doesn't take into account the curvature of the Earth, but that's okay, since we're focusing on structures in this exercise, but if you want to get more percise, take a look at the following code and see if you can work it into your solution:
+To take the curvature of the Earth into account, we'll use the Haversine formula. Create a header and source file the for following functions:
+
 ```cpp
 double to_rad(double deg) {
     return deg * M_PI / 180.0;
@@ -83,6 +79,8 @@ double calculateDistance(GeoLocation loc1, GeoLocation loc2) {
     return distance;
 }
 ```
+
+Consider what includes you'll need to make it work.
 
 _**Hint** Go to https://www.google.dk/maps/place/Aarhus/ and right-click on the map to copy
 GPS coordinates for testing_
