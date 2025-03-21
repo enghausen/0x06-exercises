@@ -4,7 +4,7 @@
     {
       "label": "build_project",
       "type": "cppbuild",
-      "command": "/usr/bin/g++",
+      "command": "g++",
       "args": [
         "-g",
         "-std=c++20",
